@@ -2,15 +2,12 @@ package com.minetendo.minesurvival;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Map.Entry;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.Server;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -22,8 +19,6 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.PlayerInventory;
-import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import ru.tehkode.permissions.PermissionUser;
@@ -33,10 +28,10 @@ public class MineSurvival
   extends JavaPlugin
   implements Listener
 {
-private HashMap<String, Long> lastUsage = new HashMap();
-  private HashMap<String, Integer> daysMap = new HashMap();
-  private HashMap<String, Long> damage = new HashMap();
-  private HashMap<String, Boolean> killable = new HashMap();
+private HashMap<String, Long> lastUsage = new HashMap<String, Long>();
+  private HashMap<String, Integer> daysMap = new HashMap<String, Integer>();
+  private HashMap<String, Long> damage = new HashMap<String, Long>();
+  private HashMap<String, Boolean> killable = new HashMap<String, Boolean>();
   private final int cdtime = 10;
   private final int damagetime = 10;
   
