@@ -3,47 +3,25 @@ package com.minetendo.minesurvival;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
-import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.EntityDamageByEntityEvent;
-import org.bukkit.event.entity.EntityDamageEvent;
-import org.bukkit.event.entity.PlayerDeathEvent;
-import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
-import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import ru.tehkode.permissions.PermissionUser;
 import ru.tehkode.permissions.bukkit.PermissionsEx;
 
-<<<<<<< HEAD
 public class MineSurvival extends JavaPlugin implements Listener{
   private HashMap<String, Integer> daysMap = new HashMap<String, Integer>();
   private HashMap<String, Boolean> killable = new HashMap<String, Boolean>();
   HashMap<String, Integer> map = new HashMap<String, Integer>();
   Cooldown cd;
-=======
-public class MineSurvival
-  extends JavaPlugin
-  implements Listener
-{
-private HashMap<String, Long> lastUsage = new HashMap<String, Long>();
-  private HashMap<String, Integer> daysMap = new HashMap<String, Integer>();
-  private HashMap<String, Long> damage = new HashMap<String, Long>();
-  private HashMap<String, Boolean> killable = new HashMap<String, Boolean>();
-  private final int cdtime = 10;
-  private final int damagetime = 10;
   
->>>>>>> 039ccb0a84f503d392b920a499fcf2e3a642dfe3
   public void onEnable()
   {
     getServer().getPluginManager().registerEvents(this, this);
