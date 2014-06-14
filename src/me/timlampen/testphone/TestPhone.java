@@ -58,6 +58,7 @@ public class TestPhone extends JavaPlugin implements Listener{
 	public void soda() {
         ShapelessRecipe recipe = new ShapelessRecipe(getCustomItem(Items.Phone));
         recipe.addIngredient(Material.IRON_INGOT);
+        recipe.addIngredient(Material.GREEN_RECORD);
         this.getServer().addRecipe(recipe);
     }
 	public enum Items {
